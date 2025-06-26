@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TruthScope</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="shortcut icon" href="img/2.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="logo">TruthScope</div>
+    <nav>
+      <ul>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#features">Fonctionnalités</a></li>
+        <li><a href="#demo">Démo</a></li>
+      </ul>
+    </nav>
+    <!-- Dark/Light mode -->
+    <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#presentation">Présentation</a>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#demo">Démo</a>
+    </div>
+  </header>
+
+  <!-- SECTION HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Détectez le Future des Fake News</h1>
+      <p>Explorez une nouvelle ère de vérification grâce à des algorithmes visionnaires et une technologie de pointe en temps réel.</p>
+      <button class="btn" onclick="scrollToSection('demo')">Découvrir la Démo</button>
+    </div>
+  </section>
+
+  <!-- PRÉSENTATION -->
+  <section id="presentation" class="presentation-container">
+    <div class="presentation-content">
+        <h2 class="presentation-title">Présentation du Projet</h2>
+        <div class="presentation-divider"></div>
+        <p class="presentation-text">
+            <strong>TruthScope</strong> est une solution innovante exploitant l'intelligence artificielle avancée et l'analyse sémantique de pointe pour <span class="highlight">identifier</span>, <span class="highlight">analyser</span> et <span class="highlight">neutraliser</span> la désinformation avec une précision inégalée.
+        </p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🔍</div>
+                <p>Évaluation de fiabilité des sources</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚖️</div>
+                <p>Détection des biais</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <p>Identification des contenus trompeurs</p>
+            </div>
+        </div>
+        <p class="presentation-conclusion">
+            Conçu pour relever les défis de l'ère numérique, <strong>TruthScope</strong> s'adapte en permanence aux nouvelles stratégies de manipulation de l'information, offrant ainsi une approche proactive pour un monde plus informé et sécurisé.
+        </p>
+    </div>
+</section>
+
+  <!-- FONCTIONNALITÉS -->
+  <section id="features" class="features-section">
+    <h2 class="features-title">Fonctionnalités Futuristes</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon-container">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="var(--primary-color)" d="M12,16C12.56,16.84 13.31,17.53 14.2,18L12,20.2L9.8,18C10.69,17.53 11.45,16.84 12,16M17,11.2A2,2 0 0,0 15,13.2A2,2 0 0,0 17,15.2A2,2 0 0,0 19,13.2C19,12.09 18.1,11.2 17,11.2M7,11.2A2,2 0 0,0 5,13.2A2,2 0 0,0 7,15.2A2,2 0 0,0 9,13.2A2,2 0 0,0 7,11.2M17,8.7A4,4 0 0,1 21,12.7A4,4 0 0,1 17,16.7A4,4 0 0,1 13,12.7A4,4 0 0,1 17,8.7M7,8.7A4,4 0 0,1 11,12.7A4,4 0 0,1 7,16.7A4,4 0 0,1 3,12.7A4,4 0 0,1 7,8.7M2.24,1C4,4.7 2.73,7.46 1.55,10.2C1.19,11 1,11.9 1,12.7A6,6 0 0,0 7,18.7C7.21,18.69 7.42,18.68 7.63,18.65L10.59,21.61L12,23L13.41,21.61L16.37,18.65C16.58,18.68 16.79,18.69 17,18.7A6,6 0 0,0 23,12.7C23,11.9 22.81,11 22.45,10.2C21.27,7.46 20,4.7 21.76,1C19.12,3.06 15.36,4.69 12,4.7C8.64,4.69 4.88,3.06 2.24,1Z"></path>
+                    </svg>
+                </div>
+                <div class="feature-pulse"></div>
+            </div>
+            <h3 class="feature-title">Analyse Sémantique 4.0</h3>
+            <div class="feature-divider"></div>
+            <p class="feature-description">Une compréhension contextuelle ultra-précise pour distinguer le vrai du faux.</p>
+            <div class="feature-indicator">
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon-container">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="var(--primary-color)" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M16.24,7.76C15.07,6.58 13.53,6 12,6V12L7.76,16.24C10.1,18.58 13.9,18.58 16.24,16.24C18.59,13.9 18.59,10.1 16.24,7.76M12,8.5A3.5,3.5 0 0,0 8.5,12A3.5,3.5 0 0,0 12,15.5A3.5,3.5 0 0,0 15.5,12A3.5,3.5 0 0,0 12,8.5"></path>
+                    </svg>
+                </div>
+                <div class="feature-pulse"></div>
+            </div>
+            <h3 class="feature-title">Détection en Temps Réel</h3>
+            <div class="feature-divider"></div>
+            <p class="feature-description">Surveillance continue grâce à des algorithmes adaptatifs et prédictifs.</p>
+            <div class="feature-indicator">
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon-container">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="var(--primary-color)" d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z"></path>
+                    </svg>
+                </div>
+                <div class="feature-pulse"></div>
+            </div>
+            <h3 class="feature-title">Interface Visionnaire</h3>
+            <div class="feature-divider"></div>
+            <p class="feature-description">Une expérience immersive et intuitive alliant design épuré et interactivité.</p>
+            <div class="feature-indicator">
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- DÉMO INTERACTIVE -->
+<section id="demo" class="demo-section">
+    <h2 class="features-title">Démo Interactive</h2>
+    <div class="demo-container">
+        <p class="demo-description">
+            Testez notre algorithme en saisissant un texte. Laissez notre système futuriste analyser le contenu et fournir un verdict simulé sur sa véracité.
+        </p>
+        
+        <div class="demo-interface">
+            <div class="demo-input-container">
+                <div class="demo-input-wrapper">
+                    <textarea id="demo-text" class="demo-input" placeholder="Entrez un texte ici..." rows="5"></textarea>
+                    <div class="demo-scan-line"></div>
+                </div>
+                <div class="demo-controls">
+                    <button id="analyze-btn" class="demo-button">
+                        <span class="button-text">Analyser</span>
+                        <span class="button-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18">
+                                <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M9.5,14.5L7,12L9.5,9.5L11,11L9.5,12.5L11,14L9.5,14.5M14.5,14.5L13,13L14.5,11.5L13,10L14.5,9.5L17,12L14.5,14.5M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z"></path>
+                            </svg>
+                        </span>
+                    </button> 
+                </div>
+                <div id="result-text" class="demo-result" style="margin-top: 15px; font-weight: bold;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 TruthScope - Tous droits réservés.</p>
+    <p style="margin-top: 10px; font-size: 0.85em; opacity: 0.8;">
+        Made by ⴱⴻⵏⵉⵏⵉ | BENINI.
+      </p>
+      
+  </footer>
+
+  <!-- Bouton Retour en Haut -->
+  <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+  
+</body>
+</html>
