@@ -1,0 +1,11 @@
+transformers
+datasets
+peft
+accelerate
+bitsandbytes
+scikit-learn
+evaluate
+pytorch-lightning
+fastapi
+uvicorn
+torch
