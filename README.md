@@ -5,7 +5,7 @@
 
 ---
 
-## 🧠 Dataset et prétraitement
+## Dataset et prétraitement
 
 Le modèle a été entraîné sur un **ensemble de données composite**, fusionnant trois sources fiables et complémentaires :
 
@@ -15,8 +15,11 @@ Le modèle a été entraîné sur un **ensemble de données composite**, fusionn
 
 Les données ont été rigoureusement **nettoyées, filtrées et harmonisées** afin d’obtenir un corpus pertinent pour la détection de fausses informations.
 
-📁 Le dataset final ainsi que les scripts de traitement sont disponibles ici :  
-👉 [Accès Google Drive](https://drive.google.com/...) *(a remplace une fois les dossiers son uploadé sur drive)*
+📁 Le dataset complet utilisé dans ce projet contient environ **185 000 lignes**.  
+Étant donné les contraintes de taille, un **échantillon représentatif de 30 000 lignes** (soit environ **16 % du dataset total**) a été mis en ligne sous le nom de `dataset_sample.csv`.
+
+📬 Si vous avez besoin d’accéder au dataset complet, veuillez me contacter via [LinkedIn](https://www.linkedin.com/in/anisbenini) ou [GitHub](https://github.com/AnisBenini).
+
 
 ---
 
@@ -27,8 +30,6 @@ Avant de lancer le projet, installez les bibliothèques nécessaires :
 ```bash
 pip install -r model/requirements.txt
 ```
-
-> 💡 **Astuce** : il est fortement recommandé d’utiliser un environnement virtuel (`venv` ou `conda`) pour isoler vos dépendances.
 
 ---
 
@@ -47,7 +48,7 @@ model_path = r"model/results-qlora/checkpoint-37164"
 
 ---
 
-## 🚀 Lancement rapide
+## Lancement rapide
 
 1. **Lancer le backend avec Uvicorn** :
 ```bash
@@ -62,7 +63,7 @@ uvicorn app:app --reload
 
 ---
 
-## 🧱 Structure du projet
+## Structure du projet
 
 ```
 TruthScope/
@@ -88,10 +89,10 @@ TruthScope/
 
 ---
 
-## 👨‍💻 Auteur
+## Auteur
 
 Projet réalisé par **Anis Benini**  
-🎓 Étudiant en Intelligence Artificielle & Data Science  
+Étudiant en Intelligence Artificielle & Data Science  
 📅 Mémoire de fin d’études 2024–2025  
 
 ---
